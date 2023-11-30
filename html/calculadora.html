@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/calculadora.css" />
+    <title>Calcule Metros em Hectares</title>
+  </head>
+  <body>
+    <h1 id="titulo_inicial">Calculadora de conversão de metros em hectares</h1>
+    <div id="frase_inicial">Insira a metragem do seu terreno</div>
+    <input id="input_metros" type="Number" min="0" />
+    <button id="botao_calcular" onclick="calcular()">Calcular</button>
+    <div id="div_calculoPlantação"></div>
+  </body>
+</html>
+
+<script>
+  function calcular() {
+    var metros = Number(input_metros.value);
+    var hectares = metros / 10000;
+
+    div_calculoPlantação.innerHTML = `<br> Você possui ${hectares} em hectares de terra`;
+
+    if (metros == "" || metros == 0) {
+      div_calculoPlantação.innerHTML = "";
+    }
+  }
+</script>
