@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2784/2784460.png" type="image/x-icon">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,15 +10,21 @@
     <title>Calcule Metros em Hectares</title>
   </head>
   <body>
-    <div class="teste">
-      <h1 id="titulo_inicial">
-        Calculadora de conversão de metros em hectares
-      </h1>
-      <div id="frase_inicial">Insira a metragem do seu terreno</div>
-      <input id="input_metros" type="Number" min="0" />
-      <button id="botao_calcular" onclick="calcular()">Calcular</button>
-      <div id="div_calculo"></div>
-    </div>
+    <div id="container-calculadora">
+      <div class="elementos">
+        <div id="div_titulo">
+          <h1 id="titulo_inicial">
+            Calculadora de conversão de metros em hectares
+          </h1>
+        </div>
+        <div id="frase_inicial">Insira a metragem do seu terreno</div>
+        <div id="div_buttomInput">
+          <input id="input_metros" type="Number" min="0" />
+          <button id="botao_calcular" onclick="calcular()">Calcular</button>
+        </div>
+        <div id="div_calculo"></div>
+      </div>
+  </div>
   </body>
 </html>
 
@@ -30,10 +38,10 @@
 
     div_calculo.innerHTML = `<br> Você possui ${hectares} em hectares de terra`;
 
-    if (input_metros.value == "") {
+    if (input_metros.value == "" || input_metros.value == 0) {
       div_calculo.innerHTML = ``;
     } else if (metros <= 0) {
-      div_calculo.innerHTML = `Selecione um valor valido`;
+      alert(`Defina um valor valido`);
     }
   }
 </script>
