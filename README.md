@@ -30,10 +30,6 @@ Para converter 5000 metros quadrados para hectares, insira 5000 na calculadora e
 
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções ou novas funcionalidades.
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
 ---
 
 <div align="center">
