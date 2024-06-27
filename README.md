@@ -1,11 +1,12 @@
 # Calculadora de Hectares
 
-Este projeto consiste em uma calculadora simples desenvolvida com HTML e CSS para calcular áreas em hectares.
+Este projeto consiste em uma calculadora simples desenvolvida com HTML, JavaScript e CSS para calcular áreas em hectares.
 
 ## Funcionalidades
 
 - Calculadora de conversão de áreas em metros quadrados para hectares.
 - Interface simples e intuitiva utilizando HTML para a estrutura e CSS para o estilo.
+- Calculos realizados com JavaScript
 
 ## Como usar
 
