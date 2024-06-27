@@ -45,20 +45,12 @@ overflow: hidden;
     justify-content: center;
 }
 
-/*titulo principal */
-#div_titulo {
-  
-}
 
 /*titulo secundario*/
 #frase_inicial {
 font-size: 15px;
 }
 
-/*movimentação button e input, deixar vazio */
-#div_buttomInput {
-
-}
 
 #input_metros {
 width: 50x;
@@ -86,5 +78,4 @@ border-radius:5px;
 #div_calculo {
 color: rgb(0, 0, 0);
 font-family: 'Poppins', sans-serif;
-margin-top: 1rem;
 }
